@@ -75,7 +75,7 @@ void parse_csv(std::string filename, std::vector<Course>& courses) {
     Course course;
     course.title = fields[0];
     course.number_of_units = fields[1];
-    course.quarter = (fields[2] == "null") ? "null" : fields[2]; // 处理 'null' 值
+    course.quarter = fields[2]; 
     courses.push_back(course);
   }
   file.close();
