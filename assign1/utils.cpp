@@ -1,3 +1,19 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <algorithm>
+#include <cstdlib>
+
+class Course {
+ public:
+  Course(const std::string& title, const std::string& number_of_units, const std::string& quarter)
+      : title(title), number_of_units(number_of_units), quarter(quarter) {}
+
+  std::string title;
+  std::string number_of_units;
+  std::string quarter;
+};
 /*
  * CS106L Assignment 1: SimpleEnroll
  * Created by Fabio Ibanez with modifications by Jacob Roberts-Baca.
